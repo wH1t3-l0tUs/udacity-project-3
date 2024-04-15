@@ -1,6 +1,6 @@
 ### Build
 FROM beevelop/ionic:v2021.06.1 AS ionic
-FROM node:20
+FROM node:16
 
 ## Create app directory
 WORKDIR /usr/src/app
