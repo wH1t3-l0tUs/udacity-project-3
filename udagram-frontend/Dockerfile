@@ -6,6 +6,7 @@ FROM node:16
 WORKDIR /usr/src/app
 
 RUN npm i -g @angular/cli
+RUN npm i --legacy-peer-deps
 
 ## Install app dependencies
 ## A wildcard is used to ensure both package.json AND package-lock.json are copied
