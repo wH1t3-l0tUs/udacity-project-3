@@ -5,12 +5,12 @@ FROM node:16
 ## Create app directory
 WORKDIR /usr/src/app
 
-RUN npm i -g @angular/cli
+RUN npm i -f -g @angular/cli
 
 ## Install app dependencies
 ## A wildcard is used to ensure both package.json AND package-lock.json are copied
 COPY package*.json ./
-RUN npm i --legacy-peer-deps
+RUN npm i --force
 RUN npm ci
 ## Bundle app source
 COPY . .
