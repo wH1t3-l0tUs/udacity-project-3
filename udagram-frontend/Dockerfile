@@ -1,6 +1,6 @@
 ### Build
 FROM beevelop/ionic:v2021.06.1 AS ionic
-FROM node:16
+FROM node:16.17.1
 
 ## Create app directory
 WORKDIR /usr/src/app
@@ -10,7 +10,7 @@ WORKDIR /usr/src/app
 ## A wildcard is used to ensure both package.json AND package-lock.json are copied
 COPY package*.json ./
 
-RUN npm i -f -g @angular/cli ionic
+RUN npm i -f -g @angular/cli i
 RUN npm ci -f
 ENV NODE_OPTIONS=--openssl-legacy-provider
 
