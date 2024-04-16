@@ -5,13 +5,15 @@ FROM node:16
 ## Create app directory
 WORKDIR /usr/src/app
 
-RUN npm i -f -g @angular/cli
 
 ## Install app dependencies
 ## A wildcard is used to ensure both package.json AND package-lock.json are copied
 COPY package*.json ./
 
+RUN npm i -f -g @angular/cli
 RUN npm ci -f
+ENV NODE_OPTIONS=--openssl-legacy-provider
+
 ## Bundle app source
 COPY . .
 RUN ionic build
