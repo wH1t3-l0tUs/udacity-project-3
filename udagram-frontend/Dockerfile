@@ -6,9 +6,10 @@ WORKDIR /usr/src/app
 ## A wildcard is used to ensure both package.json AND package-lock.json are copied
 COPY package*.json ./
 
-RUN npm ci
+RUN npm install -g @angular/cli -f
 
-RUN npm install -g @angular/cli
+RUN npm ci -f
+
 
 ## Bundle app source
 ENV NODE_OPTIONS=--openssl-legacy-provider
