@@ -1,4 +1,4 @@
-version: "10"
+version: "3"
 services:
   reverseproxy:
     build:
@@ -15,4 +15,4 @@ services:
   frontend:
     build:
       context: ./udagram-frontend
-    image: udagram-frontend
+    image: udagram-frontend:local
