@@ -16,7 +16,7 @@ spec:
         spec:
             containers:
                 - name: frontend
-                  image: johnnyrico97/udagram-frontend:v6
+                  image: johnnyrico97/udagram-frontend:v7
                   imagePullPolicy: Always
                   envFrom:
                       - secretRef:
