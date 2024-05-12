@@ -15,7 +15,7 @@ spec:
                 service: reverseproxy
         spec:
             containers:
-                - image: johnnyrico97/udagram-reverseproxy:v1
+                - image: johnnyrico97/udagram-reverseproxy:v12
                   name: reverseproxy
                   imagePullPolicy: Always
                   envFrom:
