@@ -16,7 +16,7 @@ spec:
         spec:
             containers:
                 - name: frontend
-                  image: johnnyrico97/udagram-frontend:v7
+                  image: johnnyrico97/udagram-frontend:v1
                   imagePullPolicy: Always
                   envFrom:
                       - secretRef:
@@ -27,3 +27,10 @@ spec:
                             name: aws-secret
                   ports:
                       - containerPort: 80
+                  resources:
+                      requests:
+                          memory: '64Mi'
+                          cpu: '250m'
+                      limits:
+                          memory: '2048Mi'
+                          cpu: '500m'
