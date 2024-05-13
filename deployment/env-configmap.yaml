@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: ConfigMap
 data:
-    AWS_BUCKET: rico-project-3-bucket
+    AWS_BUCKET: rico-bucket-prj3
     AWS_PROFILE: default
-    AWS_REGION: us-east-1
+    AWS_REGION: us-east-2
     JWT_SECRET: testing
     POSTGRES_DB: postgres
-    POSTGRES_HOST: rico-project-3-db.cfjp5kgids0b.us-east-1.rds.amazonaws.com
+    POSTGRES_HOST: db-rico.ci6c6fmzzyad.us-east-2.rds.amazonaws.com
     URL: http://a03807e08e51c4fda898952f58e627bd-1300267408.us-east-2.elb.amazonaws.com:8100
 metadata:
     name: env-config
