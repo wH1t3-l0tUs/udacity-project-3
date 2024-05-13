@@ -7,6 +7,6 @@ data:
     JWT_SECRET: testing
     POSTGRES_DB: postgres
     POSTGRES_HOST: rico-project-3-db.cfjp5kgids0b.us-east-1.rds.amazonaws.com
-    URL: http://localhost:8100
+    URL: http://a807e6c5f05cb427e9e78518baf7a264-1689871584.us-east-2.elb.amazonaws.com:8100
 metadata:
     name: env-config
